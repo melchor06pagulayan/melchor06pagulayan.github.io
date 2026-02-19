@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>E-Commerce Virtual Assistant | Amazon & Shopify Support – Melchor Pagulayan</title>
+
+  <meta name="description" content="E-Commerce Virtual Assistant for Amazon FBA & Shopify. I help store owners with product research, listing optimization, store operations, and customer support so they can focus on growth.">
+  <meta name="keywords" content="Amazon Virtual Assistant, Shopify Virtual Assistant, E-Commerce VA, Amazon FBA Support, Product Research, Listing Optimization, Shopify Management">
+  <meta name="author" content="Melchor Pagulayan">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* CONTACT HOVER & COPY */
+
+    .contact-info {
+      line-height: 2;
+    }
+
+    .contact-link {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease, text-decoration 0.2s ease;
+    }
+
+    .contact-link:hover {
+      color: #0a58ca;
+      text-decoration: underline;
+    }
+
+    .copy-wrapper {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .copy-icon {
+      cursor: pointer;
+      font-size: 14px;
+      opacity: 0.6;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .copy-icon:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    .about-section {
+      padding: 80px 20px;
+      background-color: #ffffff;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 38px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #1a4d2e;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+    }
+
+    .about-intro {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .about-text {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 18px;
+      color: #555;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      background: #f5f5f0;
+      color: #2c2c2c;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: #fff;
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0,0,0,.05);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a4d2e;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg,#1a4d2e,#4f6f52);
+      color: #fff;
+      padding: 90px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 260px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid rgba(255,255,255,0.4);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      justify-self: center;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .hero ul {
+      margin-top: 16px;
+      padding-left: 18px;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .badges {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .badge {
+      background: rgba(255,255,255,.15);
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .btn {
+      padding: 12px 26px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background: #d4a574;
+      color: #2c2c2c;
+    }
+
+    .btn-secondary {
+      border: 2px solid #fff;
+      color: #fff;
+      margin-left: 10px;
+    }
+
+    section {
+      padding: 80px 0;
+      background: #fff;
+    }
+
+    .section-sub {
+      text-align: center;
+      max-width: 760px;
+      margin: 12px auto 50px;
+      color: #5a5a5a;
+      font-size: 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e0e0d8;
+      padding: 24px;
+      border-radius: 14px;
+    }
+
+    /* Uniform, responsive portfolio images */
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 12px;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .filters {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .filters button {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 20px;
+      background: #eee;
+      margin: 5px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 13px;
+    }
+
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .tool {
+      background: #f5f5f0;
+      padding: 20px;
+      border-radius: 14px;
+      font-size: 15px;
+    }
+
+    .testimonial {
+      background: #f5f5f0;
+      padding: 24px;
+      border-radius: 14px;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .cta {
+      background: linear-gradient(135deg,#1a4d2e,#4f6f52);
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta p {
+      max-width: 600px;
+      margin: 10px auto;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    footer {
+      background: #2c2c2c;
+      color: #fff;
+      text-align: center;
+      padding: 28px 16px;
+      font-size: 13px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      background: #25d366;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      z-index: 999;
+      font-size: 13px;
+    }
+
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+
+    .lightbox img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+    }
+
+    /* Tablet breakpoint */
+    @media (max-width: 992px) {
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section-title {
+        font-size: 32px;
+      }
+    }
+
+    /* Mobile breakpoint */
+    @media (max-width: 768px) {
+      header {
+        padding: 10px 0;
+      }
+
+      nav {
+        padding: 0 12px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .nav-links {
+        display: none; /* simple hide on mobile for now */
+      }
+
+      .hero {
+        padding: 60px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+
+      .hero ul {
+        font-size: 14px;
+      }
+
+      section {
+        padding: 60px 16px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .card {
+        padding: 18px;
+      }
+
+      .filters button {
+        padding: 8px 14px;
+        font-size: 12px;
+      }
+
+      .tool {
+        padding: 16px;
+        font-size: 14px;
+      }
+
+      .testimonial {
+        font-size: 14px;
+      }
+
+      .btn {
+        padding: 11px 22px;
+        font-size: 13px;
+      }
+
+      .btn-secondary {
+        margin-left: 0;
+        margin-top: 6px;
+      }
+
+      .whatsapp {
+        padding: 10px 14px;
+        font-size: 12px;
+        bottom: 12px;
+        right: 12px;
+      }
+    }
+
+    /* Extra small phones */
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 22px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .section-title {
+        font-size: 26px;
+      }
+
+      .section-sub {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="container">
+    <div class="logo">Melchor Pagulayan</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#certs">Training</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <img src="profile.jpeg" alt="Headshot of E-Commerce Virtual Assistant Melchor Pagulayan">
+    <div>
+      <h1>E‑Commerce Virtual Assistant for Amazon FBA & Shopify Growth</h1>
+      <p>I help busy online store owners increase profit and free up their time through product research, listing optimization, and streamlined day‑to‑day store operations.</p>
+
+      <ul>
+        <li>Amazon FBA & FBM operations support</li>
+        <li>Shopify product, catalog, and order management</li>
+        <li>Product research with ROI and profitability checks</li>
+      </ul>
+
+      <div class="badges">
+        <span class="badge">🛒 Amazon FBA</span>
+        <span class="badge">🛍️ Shopify</span>
+        <span class="badge">📦 Product Research</span>
+        <span class="badge">⏱️ Operations Support</span>
+      </div>
+
+      <br>
+      <a href="resume.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download Resume</a>
+      <a href="#contact" class="btn btn-secondary">Hire Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <h2 class="section-title">About Me</h2>
+
+    <p class="about-intro">
+      Hi, I’m <strong>Melchor Pagulayan</strong>, an experienced
+      <strong>E‑Commerce Virtual Assistant</strong> specializing in
+      <strong>Amazon FBA, FBM, and Shopify operations</strong>.
+    </p>
+
+    <p class="about-text">
+      I help online store owners increase sales and streamline daily operations
+      by handling time‑consuming backend tasks—so you can focus on growing your
+      business. From accurate product listings and inventory tracking to customer
+      support and store maintenance, I work with precision, accountability, and
+      results in mind.
+    </p>
+
+    <p class="about-text">
+      With hands‑on experience and professional e‑commerce training, I use
+      industry‑standard tools to deliver reliable, high‑quality support.
+      My goal is to be a long‑term partner in your success, not just a task
+      completer.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2 class="section-title">Services</h2>
+  <p class="section-sub">Practical e‑commerce support focused on profit, accuracy, and smooth operations.</p>
+  <div class="container cards">
+    <div class="card">
+      <h3>Amazon FBA Support</h3>
+      <p>I manage Seller Central, product listings, inventory, and basic order monitoring so you avoid stockouts, policy issues, and missed sales opportunities.</p>
+    </div>
+    <div class="card">
+      <h3>Product Research & Analysis</h3>
+      <p>I identify profitable products that match your ROI, margin, and sales criteria for online arbitrage or wholesale sourcing.</p>
+    </div>
+    <div class="card">
+      <h3>Shopify Store Management</h3>
+      <p>I handle product uploads, collections, basic theme edits, and order processing to keep your store clean, organized, and easy to shop.</p>
+    </div>
+    <div class="card">
+      <h3>Website & CMS Maintenance</h3>
+      <p>I support simple content updates, layout adjustments, and troubleshooting so your website stays fast, updated, and trustworthy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certs">
+  <h2 class="section-title">Training & Certifications</h2>
+  <p class="section-sub">Relevant e‑commerce and digital skills training I’ve completed.</p>
+  <div class="container cards">
+    <div class="card">
+      <img src="ava-ph-amazon-fba.png" loading="lazy" alt="Certificate for Amazon FBA and Product Research training from AVA PH">
+      <h3>Amazon FBA & Product Research (AVA PH)</h3>
+    </div>
+    <div class="card">
+      <img src="prova-shopify-training.png" loading="lazy" alt="Certificate for Shopify Store Management training from ProVA">
+      <h3>Shopify Store Management (ProVA)</h3>
+    </div>
+    <div class="card">
+      <img src="fama-facebook-ads.png" loading="lazy" alt="Certificate for Facebook Ads Accelerator training from FAMA">
+      <h3>Facebook Ads Accelerator (FAMA)</h3>
+    </div>
+    <div class="card">
+      <img src="go-high-level-crm.png" loading="lazy" alt="Certificate for Go High Level CRM training">
+      <h3>Go High Level CRM</h3>
+    </div>
+    <div class="card">
+      <img src="vatp-va-smm.png" loading="lazy" alt="Certificate for Virtual Assistant and Social Media Marketing training">
+      <h3>VA & Social Media Marketing</h3>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <h2 class="section-title">Sample Works</h2>
+  <p class="section-sub">A few examples of how I support Amazon, Shopify, and website clients.</p>
+
+  <div class="filters">
+    <button onclick="filterCards('all')">All</button>
+    <button onclick="filterCards('amazon')">Amazon</button>
+    <button onclick="filterCards('shopify')">Shopify</button>
+    <button onclick="filterCards('website')">Website</button>
+  </div>
+
+  <div class="container cards">
+    <div class="card amazon">
+      <img src="amazon-product-research.png" loading="lazy" alt="Amazon product research spreadsheet example">
+      <h3>Amazon Product Research</h3>
+      <p>Researched online arbitrage products for a US Amazon FBA store with clear ROI, profit, and monthly sales criteria.</p>
+    </div>
+    <div class="card amazon">
+      <img src="amazon-affiliate-report.png" loading="lazy" alt="Sample Amazon affiliate performance report">
+      <h3>Amazon Affiliate Reports</h3>
+      <p>Prepared simple performance reports and summaries to help a client track their Amazon affiliate earnings and top‑performing products.</p>
+    </div>
+    <div class="card shopify">
+      <img src="shopify-product-page.png" loading="lazy" alt="Shopify product page created for a client store">
+      <h3>Shopify Product Page</h3>
+      <p>Set up product pages with images, variants, and descriptions to support a new product launch on Shopify.</p>
+    </div>
+    <div class="card shopify">
+      <img src="shopify-product-catalog.png" loading="lazy" alt="Organized Shopify product catalog example">
+      <h3>Shopify Product Catalog</h3>
+      <p>Managed product catalog organization and collection structure to make browsing easier for shoppers.</p>
+    </div>
+    <div class="card website">
+      <img src="website-homepage.png" loading="lazy" alt="Homepage layout for an e-commerce website">
+      <h3>Website Homepage</h3>
+      <p>Assisted in building a clean, simple homepage for an e‑commerce brand to highlight key products and offers.</p>
+    </div>
+    <div class="card website">
+      <img src="website-maintenance.png" loading="lazy" alt="Example of website maintenance and content updates">
+      <h3>Website Maintenance</h3>
+      <p>Supported ongoing content updates and minor layout tweaks to keep the site fresh, updated, and functional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools">
+  <h2 class="section-title">Tools I Use</h2>
+  <p class="section-sub">Reliable tools I work with to support your store and operations.</p>
+  <div class="container tools">
+    <div class="tool">🖌️ Canva</div>
+    <div class="tool">📊 Google Sheets</div>
+    <div class="tool">📧 Gmail</div>
+    <div class="tool">📈 Keepa</div>
+    <div class="tool">🛒 SellerAmp (SAS)</div>
+    <div class="tool">🌐 WordPress</div>
+    <div class="tool">🛍️ WooCommerce</div>
+    <div class="tool">📱 WhatsApp</div>
+    <div class="tool">🤖 ChatGPT</div>
+    <div class="tool">🧠 Claude</div>
+    <div class="tool">⚡ Gemini</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <h2 class="section-title">Testimonials</h2>
+  <p class="section-sub">Real feedback from store owners I’ve supported on Amazon, Shopify, and website projects.</p>
+  <div class="container cards">
+    <div class="testimonial">
+      “What I like about working with Mel is that he pays attention to details.
+      Tasks are completed as instructed, and updates are always communicated properly.
+      He’s dependable and professional.”
+      <br><strong>— Shabbir A., E‑commerce Store Owner</strong>
+    </div>
+    <div class="testimonial">
+      “We hired Mel to manage product uploads and build the website from scratch.
+      Everything was completed accurately and on time. He is easy to work with and
+      understands how Shopify stores operate.”
+      <br><strong>— Ibby, Shopify & Amazon Store Owner</strong>
+    </div>
+    <div class="testimonial">
+      “Mel helped us to manage day‑to‑day tasks that we didn’t have time for anymore.
+      Communication was clear, and he followed instructions well. It made our operations
+      smoother and saved us a lot of time.”
+      <br><strong>— Salina B., Amazon Store Owner</strong>
+    </div>
+    <div class="testimonial">
+      “He’s reliable and doesn’t need constant supervision, which is a big plus.”
+      <br><strong>— John P., Amazon FBA Store Owner</strong>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="cta">
+  <div class="container">
+    <h2>Let’s Work Together</h2>
+
+    <p class="contact-info">
+      <strong>Melchor Pagulayan</strong><br><br>
+
+      📧
+      <span class="copy-wrapper">
+        <a href="mailto:melchor06pagulayan@gmail.com"
+           class="contact-link"
+           id="emailText">
+          melchor06pagulayan@gmail.com
+        </a>
+        <span class="copy-icon" onclick="copyText('emailText')" title="Copy email">📋</span>
+      </span>
+      <br>
+
+      💬
+      <span class="copy-wrapper">
+        <a href="tel:+639294163102"
+           class="contact-link"
+           id="phoneText">
+          +63 929 416 3102
+        </a>
+        <span class="copy-icon" onclick="copyText('phoneText')" title="Copy phone number">📋</span>
+      </span>
+    </p>
+
+    <p>
+      Tell me a bit about your Amazon or Shopify store and what you need help with.
+      I’ll reply within 24 hours with follow‑up questions or next steps.
+    </p>
+
+    <br>
+
+    <a href="https://wa.me/639294163102"
+       class="btn btn-primary"
+       target="_blank"
+       rel="noopener noreferrer">
+      Chat on WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Melchor Pagulayan | E‑Commerce Virtual Assistant</p>
+</footer>
+
+<a href="https://wa.me/639294163102" class="whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+
+<div class="lightbox" onclick="this.style.display='none'">
+  <img src="" alt="Expanded portfolio preview image">
+</div>
+
+<script>
+  function copyText(elementId) {
+    const text = document.getElementById(elementId).innerText.trim();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard!');
+      });
+    }
+  }
+
+  const imgs = document.querySelectorAll('.card img');
+  const lightbox = document.querySelector('.lightbox');
+  const lightImg = lightbox.querySelector('img');
+
+  imgs.forEach(img => {
+    img.onclick = () => {
+      lightImg.src = img.src;
+      lightbox.style.display = 'flex';
+    };
+  });
+
+  function filterCards(cat) {
+    document.querySelectorAll('#portfolio .card').forEach(card => {
+      if (cat === 'all' || card.classList.contains(cat)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
