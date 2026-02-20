@@ -340,7 +340,35 @@
       max-height: 100%;
       border-radius: 10px;
     }
+/* HAMBURGER MENU */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
     /* Tablet breakpoint */
     @media (max-width: 992px) {
       .hero {
@@ -471,6 +499,7 @@
 <header>
   <nav class="container">
     <div class="logo">Melchor Pagulayan</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
@@ -761,7 +790,9 @@
       lightbox.style.display = 'flex';
     };
   });
-
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+}
   function filterCards(cat) {
     document.querySelectorAll('#portfolio .card').forEach(card => {
       if (cat === 'all' || card.classList.contains(cat)) {
